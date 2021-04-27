@@ -1,0 +1,49 @@
+body {
+    padding: 30px;
+
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-top: 20px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+#descriptionList {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    height: 200px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}
+
+.controlPanel {
+    margin: 20px;
+    margin-left: 0;
+}
+
+.alertAutoHide {
+    animation-fill-mode: forwards;
+    animation-name: autoHide;
+    animation-duration: 4s;
+}
+
+@keyframes autoHide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.user th, td {
+    padding: 15px;
+    text-align: left;
+}
